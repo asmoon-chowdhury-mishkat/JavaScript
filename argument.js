@@ -8,7 +8,7 @@ function bigNum() {
   }
   return max;
 }
-// console.log(big);
+console.log(big);
 let number = bigInt(345, 123, 1235, 34, 90, 21);
 function bigInt() {
   let max = -Infinity;
@@ -31,3 +31,13 @@ function smallNum() {
   return min
 }
 console.log(minValue);
+
+let addition = sumAllnumber(12, 23, 34, 45, 56, 67, 78, 89, 90);
+function sumAllnumber() {
+  let sum = 0;
+  for (let i = 0; i < arguments.length; i++) {
+    sum += arguments[i];
+  }
+  return sum;
+}
+console.log('sum of addition ', addition);
